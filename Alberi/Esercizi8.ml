@@ -37,6 +37,7 @@ let fulltree h =
     else Tr(k,aux(h-1)(k*2),aux(h-1)(k*2+1))
   in aux h 1;;
 
+(*SBAGLIATA non mi va di rifarla*)
 let rec height = function
   Empty->0
   |Tr(_,left,right)-> 1 + max(height left)(height right);;
